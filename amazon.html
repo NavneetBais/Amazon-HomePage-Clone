@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/295840c508.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      body {
+        background-color: #ebebeb;
+      }
+      .nav-list {
+        margin-right: 1rem;
+        text-align: center;
+      }
+      .nav-link:hover {
+        text-decoration: none;
+        border: 1px solid white;
+        color: white;
+      }
+      .prime:hover {
+        text-decoration: none;
+        border: 1px solid white;
+        color: white;
+      }
+      .secondaryNav {
+        background-color: #232f3e;
+        padding: 0;
+      }
+      .secondaryNav li :hover {
+        border: 1px solid white;
+      }
+      .nav-link {
+        padding: 0;
+        color: white;
+      }
+      .zindex {
+        z-index: 999;
+      }
+      .darknavbar {
+        background-color: #131921;
+      }
+      #cardSection .card {
+        margin-left: 10px;
+        margin-top: 10px;
+        border-radius: 0;
+      }
+      .card {
+        margin-left: 10px;
+        margin-top: 10px;
+        border-radius: 0;
+      }
+
+      .carousel-control-prevC,
+      .carousel-control-nextC {
+        background-color: #e1e1e100;
+        width: 10vh;
+        height: 10vh;
+
+        top: 20%;
+        transform: translateY(-50%);
+        margin: 0 10px;
+      }
+      .btn-sm {
+        height: 1.5rem;
+      }
+      .navfooter-bg {
+        background-color: #37475a;
+      }
+      .navfooter-bg:hover {
+        background-color: #3d4b5f;
+      }
+      .country a {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="px-3 py-1 navbar-expand-lg navbar-light darknavbar">
+      <div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="row pl-2 navbar-collapse" id="navbarTogglerDemo01">
+          <div class="col-1">
+            <a class="navbar-brand" href="#"
+              ><img src="/assets/img/images.png" alt="logo" width="100px"
+            /></a>
+          </div>
+
+          <div class="col-2">
+            <a class="nav-link text-white" href="#"
+              ><small>&nbsp &nbsp Home</small><br /><strong>
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                Select your address</strong
+              >
+              <span class="sr-only">(current)</span></a
+            >
+          </div>
+          <div class="col-5 d-inline">
+            <form class="form-inline d-inline m-0 my-2 my-lg-0">
+              <div class="col-10 m-0 p-0 px-0 d-inline">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <button
+                      id="btnGroupDrop1"
+                      type="button"
+                      class="btn dropdown-toggle"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      All
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                      <a class="dropdown-item" href="#">Dropdown link</a>
+                      <a class="dropdown-item" href="#">Dropdown link</a>
+                    </div>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Search Item"
+                    aria-label="Input group example"
+                    aria-describedby="btnGroupAddon"
+                  />
+                  <div class="input-group-prepend">
+                    <button
+                      class="input-group-text bg-warning rounded-right"
+                      id="btnGroupAddon"
+                    >
+                      <i class="fa fa-search"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-4 text-center">
+            <ul class="list-unstyled nav-list d-inline list-inline">
+              <li class="list-inline-item mr-5">
+                <a class="nav-link text-white" href="#"
+                  ><small>&nbsp Hello, sing In</small><br />
+                  <b>Account</b></a
+                >
+              </li>
+              <li class="list-inline-item mr-5">
+                <a class="nav-link text-white" href="#"
+                  ><small>Return</small>
+                  <br />
+                  <b>& Orders</b>
+                </a>
+              </li>
+              <li class="list-inline-item mr-5">
+                <a class="nav-link text-white" href="#"
+                  ><i class="fa fa-2x fa-shopping-cart"></i>Cart</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+    <!-- Secondary Nav -->
+    <nav class="navbar secondaryNav">
+      <ul class="list-inline pt-1 text-light m-1 px-3">
+        <li class="list-inline-item">
+          <div class="dropdown show">
+            <a
+              href=""
+              class="dropdown-toggle text-white"
+              role="button nav-link"
+              id="dropdownMenu"
+              data-toggle="dropdown"
+              ><i class="fa fa-bars"></i>All</a
+            >
+
+            <ul class="dropdown-menu scrollable-menu" role="menu">
+              <li>
+                <a class="dropdown-item" href="#">Garden & Outdoors</a>
+              </li>
+              <li><a class="dropdown-item" href="#">Gift Cards</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Grocery & Gourmet Foods</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Health & Personal Care</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Home &amp; Kitchen</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  >Industrial &amp; Scientific</a
+                >
+              </li>
+              <li><a class="dropdown-item" href="#">Jewellery</a></li>
+              <li><a class="dropdown-item" href="#">Kindle Store</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Luggage &amp; Bags</a>
+              </li>
+              <li><a class="dropdown-item" href="#">Luxury Beauty</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Movies &amp; TV Shows</a>
+              </li>
+              <li><a class="dropdown-item" href="#">Music</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Musical Instruments</a>
+              </li>
+              <li><a class="dropdown-item" href="#">Office Products</a></li>
+              <li><a class="dropdown-item" href="#">Pet Supplies</a></li>
+              <li><a class="dropdown-item" href="#">Video Games</a></li>
+              <li><a class="dropdown-item" href="#">Watches</a></li>
+
+              <li><a class="dropdown-item" href="#">All Categories</a></li>
+              <li><a class="dropdown-item" href="#">Alexa Skills</a></li>
+              <li><a class="dropdown-item" href="#">Amazon Devices</a></li>
+              <li><a class="dropdown-item" href="#">Amazon Fashion</a></li>
+              <li><a class="dropdown-item" href="#">Amazon Fresh</a></li>
+              <li><a class="dropdown-item" href="#">Amazon Pharmacy</a></li>
+              <li><a class="dropdown-item" href="#">Appliances</a></li>
+              <li><a class="dropdown-item" href="#">Apps & Games</a></li>
+              <li><a class="dropdown-item" href="#">Baby</a></li>
+              <li><a class="dropdown-item" href="#">Beauty</a></li>
+              <li><a class="dropdown-item" href="#">Books</a></li>
+              <li><a class="dropdown-item" href="#">Car & Motorbike</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Clothing & Accesories</a>
+              </li>
+              <li><a class="dropdown-item" href="#">Collectibles</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Computer & Accesories</a>
+              </li>
+              <li><a class="dropdown-item" href="#">Deals</a></li>
+              <li><a class="dropdown-item" href="#">Electronics</a></li>
+              <li><a class="dropdown-item" href="#">Furniture</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-inline-item">
+          <a href="" class="nav-link">Today's Deal</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="" class="nav-link">Customer Service</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="" class="nav-link">Registry</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="" class="nav-link">Gift Cards</a>
+        </li>
+        <li class="list-inline-item"><a href="" class="nav-link">Sell</a></li>
+      </ul>
+      <div class="float-right prime">
+        <a href=""
+          ><img src="/assets/img/400x39-SWM_80._CB610814462_.jpg" alt=""
+        /></a>
+      </div>
+    </nav>
+    <!-- Carousol -->
+    <section>
+      <div
+        id="carouselExampleControls"
+        class="carousel slide position-absolute"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="d-block w-100"
+              src="/assets/img/717OO5QwJnL._SX3000_.jpg"
+              alt="First slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="/assets/img/61DUO0NqyyL._SX3000_.jpg"
+              alt="Second slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="/assets/img/61jovjd+f9L._SX3000_.jpg"
+              alt="Third slide"
+            />
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev carousel-control-prevC"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next carousel-control-nextC"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- cardsection -->
+    <section style="margin-top: 300px" id="cardSection" class="mx-2">
+      <div class="row text-center">
+        <div class="col-sm-6 card-group col-md-3">
+          <div class="card">
+            <div class="container">
+              <div class="card-body">
+                <h5 class="card-title"><b>Gaming and Accessories</b></h5>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <img
+                      src="/assets/img/Fuji_Quad_Headset_1x._SY116_CB667159060_.jpg"
+                      alt=""
+                      width="140px"
+                    />
+                    <small>Headset</small>
+                  </div>
+                  <div class="col-md-6">
+                    <img
+                      src="/assets/img/Fuji_Quad_Keyboard_1x._SY116_CB667159063_.jpg"
+                      alt=""
+                      width="140px"
+                    />
+                    <small>Keyboard</small>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img
+                      src="/assets/img/Fuji_Quad_Chair_1x._SY116_CB667159060_.jpg"
+                      alt=""
+                      width="140px"
+                    />
+                    <small>Chair</small>
+                  </div>
+                  <div class="col-md-6">
+                    <img
+                      src="/assets/img/Fuji_Quad_Mouse_1x._SY116_CB667159063_.jpg"
+                      alt=""
+                      width="140px"
+                    />
+                    <small>Mouse</small>
+                  </div>
+                </div>
+
+                <a href="#"><small>Show More</small> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 card-group col-md-3">
+          <div class="card">
+            <div class="container">
+              <div class="card-body">
+                <h5 class="card-title"><b>Shop By Categories</b></h5>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <img
+                      src="/assets/img/Baby120X._SY85_CB468850882_.jpg"
+                      alt=""
+                      width="140px"
+                    />
+                    <small>Utilites</small>
+                  </div>
+                  <div class="col-md-6">
+                    <img
+                      src="/assets/img/computer120x._SY85_CB468850970_.jpg"
+                      alt=""
+                      width="140px"
+                      height="140px"
+                    />
+                    <small>Laptops</small>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img
+                      src="/assets/img/PS4_120X._SY85_CB438749318_.jpg"
+                      alt=""
+                      width="140px"
+                    />
+                    <small>Games</small>
+                  </div>
+                  <div class="col-md-6">
+                    <img
+                      src="/assets/img/Toys120X._SY85_CB468851693_.jpg"
+                      alt=""
+                      width="140px"
+                    />
+                    <small>Toys</small>
+                  </div>
+                </div>
+
+                <a href="#"><small>Show More</small> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 card-group col-md-3">
+          <div class="card">
+            <div class="container">
+              <div class="card-body">
+                <h5 class="card-title"><b>Gaming and Accessories</b></h5>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <img
+                      src="/assets/img/71qid7QFWJL._SX3000_.jpg"
+                      alt=""
+                      width="140px"
+                    />
+                    <small>Headset</small>
+                  </div>
+                  <div class="col-md-6">
+                    <img
+                      src="/assets/img/Fuji_Quad_Keyboard_1x._SY116_CB667159063_.jpg"
+                      alt=""
+                      width="140px"
+                    />
+                    <small>Keyboard</small>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img
+                      src="/assets/img/Fuji_Quad_Chair_1x._SY116_CB667159060_.jpg"
+                      alt=""
+                      width="140px"
+                    />
+                    <small>Chair</small>
+                  </div>
+                  <div class="col-md-6">
+                    <img
+                      src="/assets/img/Fuji_Quad_Mouse_1x._SY116_CB667159063_.jpg"
+                      alt=""
+                      width="140px"
+                    />
+                    <small>Mouse</small>
+                  </div>
+                </div>
+
+                <a href="#"><small>Show More</small> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Sign In Securely</h5>
+              <button class="btn btn-block bg-warning btn-primary">
+                Sign In
+              </button>
+            </div>
+          </div>
+          <div class="text-center mt-4">
+            <img
+              src="/assets/img/Fuji_D2_45M_en_US_1x._CB418309979_.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"><b>Electronics</b></h5>
+              <img
+                class="card-img-top mb-5"
+                src="assets/img/Categories/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg"
+                alt=""
+              />
+
+              <small class="float-left"><a href="#">See More</a></small>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"><b> Health and Personal Care</b></h5>
+              <img
+                class="card-img-top mb-5"
+                src="assets/img/Categories/GW_CONS_AUS_HPC_HPCEssentials_CatCard_Desktop1x._SY304_CB627424361_.jpg"
+                alt=""
+              />
+              <small class="float-left"><a href="#">See More</a></small>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                <b>Shop More</b>
+              </h5>
+              <img
+                class="card-img-top mb-5"
+                src="assets/img/Categories/61n1VWCpbyL._AC_SY230_.jpg"
+                alt=""
+              />
+              <div class="text-left">
+                <div>
+                  <a href=""
+                    ><img
+                      src="/assets/img/Screenshot 2022-09-11 185912.png"
+                      width="100px"
+                      alt=""
+                  /></a>
+                  <small
+                    ><b><span class="ml-1 text-danger">TOP</span></b>
+                  </small>
+                </div>
+              </div>
+
+              <div class="text-muted text-left">
+                <small>Goodreads Readers' Choice eBooks on deal</small>
+              </div>
+              <small class="float-left"><a href="#">See More</a></small>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"><b>Computer and Accessories</b></h5>
+              <img
+                class="card-img-top mb-5"
+                src="assets/img/Categories/Fuji_Dash_PC_1x._SY304_CB431800965_.jpg"
+                alt=""
+              />
+              <small class="float-left"><a href="#">See More</a></small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- scrollable-card -->
+    <section class="mx-2">
+      <div class="card row ml-2 mr-1 mt-3">
+        <div class="card-body">
+          <h5 class="card-title"><b>Top Sellers in Books for you</b></h5>
+          <div id="scrollable-card" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <!-- Fist Slide -->
+              <div class="carousel-item active">
+                <div class="row d-inline">
+                  <a href="" class="col-md-2"
+                    ><img
+                      src="/assets/img/books/51dkSMGJxpL._AC_SY200_.jpg"
+                      width="150px"
+                      height="200px"
+                      alt=""
+                  /></a>
+                  <a href="" class="col-md-1"
+                    ><img
+                      src="/assets/img/books/51vih4ClF6L._AC_SY200_.jpg"
+                      width="150px"
+                      height="200px"
+                      alt=""
+                  /></a>
+                  <a href="" class="col-md-2"
+                    ><img
+                      src="/assets/img/books/613po25d7DL._AC_SY200_.jpg"
+                      width="150px"
+                      height="200px"
+                      alt="" /></a
+                  ><a href="" class="col-md-2"
+                    ><img
+                      src="/assets/img/books/61FZ6NusdSL._AC_SY200_.jpg"
+                      width="150px"
+                      height="200px"
+                      alt="" /></a
+                  ><a href="" class="col-md-2"
+                    ><img
+                      src="/assets/img/books/61IPVLloNML._AC_SY200_.jpg"
+                      class="mx-3"
+                      width="150px"
+                      height="200px"
+                      alt="" /></a
+                  ><a href="" class="col-md-2"
+                    ><img
+                      src="/assets/img/books/61JOPOZClPL._AC_SY200_.jpg"
+                      class="mx-3"
+                      width="150px"
+                      height="200px"
+                      alt="" /></a
+                  ><a href="" class="col-md-1"
+                    ><img
+                      src="/assets/img/books/61LTEvn3+jL._AC_SY200_.jpg"
+                      class="mx-3"
+                      width="150px"
+                      height="200px"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+              <!-- Second Slide -->
+              <div class="carousel-item">
+                <div class="row d-inline">
+                  <a href="" class="col-md-2"
+                    ><img
+                      src="/assets/img/books/613po25d7DL._AC_SY200_.jpg"
+                      width="150px"
+                      height="200px"
+                      alt="" /></a
+                  ><a href="" class="col-md-2"
+                    ><img
+                      src="/assets/img/books/61FZ6NusdSL._AC_SY200_.jpg"
+                      width="150px"
+                      height="200px"
+                      alt="" /></a
+                  ><a href="" class="col-md-2"
+                    ><img
+                      src="/assets/img/books/61IPVLloNML._AC_SY200_.jpg"
+                      class="mx-3"
+                      width="150px"
+                      height="200px"
+                      alt="" /></a
+                  ><a href="" class="col-md-2"
+                    ><img
+                      src="/assets/img/books/61JOPOZClPL._AC_SY200_.jpg"
+                      class="mx-3"
+                      width="150px"
+                      height="200px"
+                      alt="" /></a
+                  ><a href="" class="col-md-2"
+                    ><img
+                      src="/assets/img/books/61LTEvn3+jL._AC_SY200_.jpg"
+                      class="mx-3"
+                      width="150px"
+                      height="200px"
+                      alt="" /></a
+                  ><a href="" class="col-md-2"
+                    ><img
+                      src="/assets/img/books/716EKQkCx-L._AC_SY200_.jpg"
+                      class="mx-3"
+                      width="150px"
+                      height="200px"
+                      alt=""
+                  /></a>
+                  <a href="" class="col-md-2"
+                    ><img
+                      src="/assets/img/books/51dkSMGJxpL._AC_SY200_.jpg"
+                      width="150px"
+                      height="200px"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#scrollable-card"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#scrollable-card"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Scrollable-card End -->
+    <!--Another Scrollable-card Section-->
+    <section class="mx-2">
+      <div class="card row ml-2 mr-1 mt-3">
+        <div class="card-body">
+          <h5 class="card-title">
+            <b>Popular products in PC Internationally</b>
+          </h5>
+          <div
+            id="scrollable-card2"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <!-- Fist Slide -->
+              <div class="carousel-item active">
+                <div class="row d-inline">
+                  <a href="" class="col-md-2"
+                    ><img
+                      src="/assets/img/popular/7156DLyUsYL._AC_SY200_.jpg"
+                      width="200px"
+                      height="210px"
+                      alt=""
+                  /></a>
+                  <a href="" class="col-md-1"
+                    ><img
+                      src="/assets/img/popular/71LsYu32caL._AC_SY200_.jpg"
+                      width="200px"
+                      height="210px"
+                      alt=""
+                  /></a>
+                  <a href="" class="col-md-2"
+                    ><img
+                      src="/assets/img/popular/71RK6+rx-xL._AC_SY200_.jpg"
+                      width="200px"
+                      height="210px"
+                      alt="" /></a
+                  ><a href="" class="col-md-2"
+                    ><img
+                      src="/assets/img/popular/71SCvh0L3OL._AC_SY200_.jpg"
+                      width="200px"
+                      height="210px"
+                      alt=""
+                  /></a>
+                  ><a href="" class="col-md-2"
+                    ><img
+                      src="/assets/img/popular/815oHMVEjDL._AC_SY200_.jpg"
+                      class="mx-3"
+                      width="200px"
+                      height="210px"
+                      alt="" /></a
+                  ><a href="" class="col-md-1"
+                    ><img
+                      src="/assets/img/popular/81cP2qZckeL._AC_SY200_.jpg"
+                      class="mx-3"
+                      width="200px"
+                      height="210px"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+              <!-- Second Slide -->
+              <div class="carousel-item">
+                <div class="row d-inline">
+                  <a href="" class="col-md-2"
+                    ><img
+                      src="/assets/img/popular/81lDOtJRTkL._AC_SY200_.jpg"
+                      width="200px"
+                      height="210px"
+                      alt="" /></a
+                  ><a href="" class="col-md-2"
+                    ><img
+                      src="/assets/img/popular/81OiT2-NoeL._AC_SY200_.jpg"
+                      width="200px"
+                      height="210px"
+                      alt="" /></a
+                  ><a href="" class="col-md-2"
+                    ><img
+                      src="/assets/img/popular/81sSYueROnL._AC_SY200_.jpg"
+                      class="mx-3"
+                      width="200px"
+                      height="210px"
+                      alt="" /></a
+                  ><a href="" class="col-md-2"
+                    ><img
+                      src="/assets/img/popular/81XIwlF8sxL._AC_SY200_.jpg"
+                      class="mx-3"
+                      width="200px"
+                      height="210px"
+                      alt="" /></a
+                  ><a href="" class="col-md-2"
+                    ><img
+                      src="/assets/img/popular/7156DLyUsYL._AC_SY200_.jpg"
+                      class="mx-3"
+                      width="200px"
+                      height="210px"
+                      alt=""
+                  /></a>
+                  <a href="" class="col-md-2"
+                    ><img
+                      src="/assets/img/popular/61Pc+BZNjRL._AC_SY200_.jpg"
+                      class="mx-3"
+                      width="150px"
+                      height="200px"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#scrollable-card2"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#scrollable-card2"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fitness CardSection -->
+    <section class="m-3">
+      <div class="row text-left">
+        <div class="col-sm-6 col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"><b>Create with Strip Lights</b></h5>
+              <img
+                class="card-img-top mb-5"
+                src="assets/img/fitness/Fuji_Dash_StripLighting_379x304_1X_en_US._SY304_CB418597476_.jpg"
+                alt=""
+              />
+
+              <small class="float-left"><a href="#">See More</a></small>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"><b> Shop Laptops and Tablets</b></h5>
+              <img
+                class="card-img-top mb-5"
+                src="assets/img/fitness/Fuji_Dash_Laptops_379x304_1X_en_US._SY304_CB418608471_.jpg"
+                alt=""
+              />
+              <small class="float-left"><a href="#">See More</a></small>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                <b>New arrivals in Toys</b>
+              </h5>
+              <img
+                class="card-img-top mb-5"
+                src="assets/img/fitness/Fuji_Dash_Toys_1X._SY304_CB639759658_.jpg"
+                alt=""
+              />
+              <small class="float-left"><a href="#">See More</a></small>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"><b>Fitness</b></h5>
+              <img
+                class="card-img-top mb-5"
+                src="assets/img/fitness/Fuji_Dash_Fitness_1X._SY304_CB639748186_.jpg"
+                alt=""
+              />
+              <small class="float-left"><a href="#">See More</a></small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sign IN Section-->
+    <section class="mx-3">
+      <div class="card text-center">
+        <div class="card-body px-0">
+          <div class="card mx-0">
+            <div class="card-body">
+              <div><small>See personalized recommendations</small></div>
+              <div>
+                <a href=""
+                  ><img
+                    src="/assets/img/signin.png"
+                    class="rounded"
+                    width="200px"
+                    alt=""
+                /></a>
+              </div>
+              <div>
+                <small>New customer? <a href="">Start here</a> </small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Back to Top-->
+    <section class="text-center navbar navfooter-bg">
+      <div class="container">
+        <div class="mx-auto">
+          <a class="text-light" style="text-decoration: none" href="#"
+            ><span><i class="fa fa-chevron-circle-up"></i></span> Back to Top</a
+          >
+        </div>
+      </div>
+    </section>
+    <!--Footer-->
+    <section class="footer pb-2" style="background-color: #232f3e">
+      <div class="row mx-auto text-white">
+        <div class="col-md-2 offset-2">
+          <div class="mt-5">
+            <ul class="list-unstyled">
+              <li>
+                <a href="" class="text-white" style="text-decoration: none"
+                  ><b>Get to Know Us</b></a
+                >
+              </li>
+              <li>
+                <a href="" class="text-white"><small>About Us</small> </a>
+              </li>
+              <li>
+                <a href="" class="text-white"><small>Careers</small></a>
+              </li>
+              <li>
+                <a href="" class="text-white"><small>Press Releases</small></a>
+              </li>
+              <li>
+                <a href="" class="text-white"><small>Amazon Cares</small></a>
+              </li>
+              <li>
+                <a href="" class="text-white"><small>Gift a Smile</small></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="mt-5">
+            <ul class="list-unstyled">
+              <li>
+                <a href="" class="text-white" style="text-decoration: none"
+                  ><b>Contact Us</b></a
+                >
+              </li>
+              <li>
+                <a href="" class="text-white"><small>Facebook</small> </a>
+              </li>
+              <li>
+                <a href="" class="text-white"><small>Twitter</small></a>
+              </li>
+              <li>
+                <a href="" class="text-white"><small>Instagra,</small></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="mt-5">
+            <ul class="list-unstyled">
+              <li>
+                <a href="" class="text-white" style="text-decoration: none"
+                  ><b>Make Money with Us</b></a
+                >
+              </li>
+              <li>
+                <a href="" class="text-white"><small>Sell on Amazon</small> </a>
+              </li>
+              <li>
+                <a href="" class="text-white"
+                  ><small>Sell under Amazon Accelerator</small></a
+                >
+              </li>
+              <li>
+                <a href="" class="text-white"
+                  ><small>Amazon Global Selling</small></a
+                >
+              </li>
+              <li>
+                <a href="" class="text-white"
+                  ><small>Become an Affiliate</small></a
+                >
+              </li>
+              <li>
+                <a href="" class="text-white"
+                  ><small>Amazon Pay on Merchants</small></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="mt-5">
+            <ul class="list-unstyled">
+              <li>
+                <a href="" class="text-white" style="text-decoration: none"
+                  ><b>Let us Help You</b></a
+                >
+              </li>
+              <li>
+                <a href="" class="text-white"
+                  ><small>COVID-19 and Amazon</small>
+                </a>
+              </li>
+              <li>
+                <a href="" class="text-white"><small>Your Account</small></a>
+              </li>
+              <li>
+                <a href="" class="text-white"><small>Returns Centre</small></a>
+              </li>
+              <li>
+                <a href="" class="text-white"
+                  ><small>100% Purchase Protection</small></a
+                >
+              </li>
+              <li>
+                <a href="" class="text-white"
+                  ><small>Amazon App Download</small></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- dropdown-->
+
+      <div class="text-center">
+        <div class="text-light mr-4 d-inline">
+          <hr style="background-color: rgb(158, 156, 156)" />
+          <img src="/assets/img/images.png" width="80px" alt="" />
+        </div>
+        <div class="text-light ml-5 d-inline">
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn btn-outline-light dropdown-toggle"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <i class="fa fa-dribbble"></i> &nbsp English
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Spanish</a>
+              <a class="dropdown-item" href="#">Hindi</a>
+            </div>
+          </div>
+        </div>
+        <div class="country mt-3">
+          <ul class="list-unstyled text-light list-inline">
+            <li class="list-inline-item">
+              <small><a href="">Australia</a></small>
+            </li>
+            <li class="list-inline-item">
+              <small><a href="">Brazil</a></small>
+            </li>
+            <li class="list-inline-item">
+              <small><a href="">Canada</a></small>
+            </li>
+            <li class="list-inline-item">
+              <small><a href="">USA</a></small>
+            </li>
+            <li class="list-inline-item">
+              <small><a href="">China</a></small>
+            </li>
+            <li class="list-inline-item">
+              <small><a href="">France</a></small>
+            </li>
+            <li class="list-inline-item">
+              <small><a href="">Germany</a></small>
+            </li>
+            <li class="list-inline-item">
+              <small><a href="">Italy</a></small>
+            </li>
+            <li class="list-inline-item">
+              <small><a href="">Japan</a></small>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="text-center p-5" style="background-color: #131a22">
+      <div>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a class="text-light" href=""
+              ><small>Conditions Of Use & Sale</small></a
+            >
+          </li>
+          <li class="list-inline-item">
+            <a class="text-light" href=""><small>Privacy Notice</small></a>
+          </li>
+          <li class="list-inline-item">
+            <a class="text-light" href=""><small>Interest-Based Ads</small></a>
+          </li>
+          <li class="list-inline-item">
+            <a class="text-light" href=""
+              ><small>©1996-2022, Amazon.com, Inc. or its affiliates</small></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
